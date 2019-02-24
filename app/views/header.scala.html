@@ -1,7 +1,4 @@
-
-@import helper._
-@session()
-
+@(content: Html)
 
 
 <!DOCTYPE html>
@@ -104,7 +101,7 @@
                             <div class="modal-body">
                                 <form method="" name="signupForm" id="signupForm">
                                     <div class="form-group">
-                                        @CSRF.formField
+                                        <!--CSRF.formField-->
                                         <label for="fname">First Name:</label>
                                         <input type="text" class="form-control" id="firstName" name="firstName"
                                         data-fv-notempty="false">
@@ -183,7 +180,7 @@
                             <div class="modal-body">
                                 <form method="post" name="loginForm" id="loginForm" action="">
                                     <div class="form-group">
-                                        @CSRF.formField
+                                        <!--CSRF.formField-->
                                         <label for="email">Email:</label>
                                         <input type="email" class="form-control" id="emailFromLogin" name="emailFromLogin" required="true" onblur="myBlurFunction()">
 
